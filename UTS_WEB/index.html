@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Masukkan Angka Disini!</h2>
+        <form id="inputForm">
+            <label>Input 1:</label>
+            <input type="number" name="input[]" placeholder="Masukkan Angka 1" required><br>
+            <label>Input 2:</label>
+            <input type="number" name="input[]" placeholder="Masukkan Angka 2" required><br>
+            <label>Input 3:</label>
+            <input type="number" name="input[]" placeholder="Masukkan Angka 3" required><br>
+            <label>Input 4:</label>
+            <input type="number" name="input[]" placeholder="Masukkan Angka 4" required><br>
+            <label>Input 5:</label>
+            <input type="number" name="input[]" placeholder="Masukkan Angka 5" required><br>
+            <button type="button" onclick="calculate()">Hitung</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
