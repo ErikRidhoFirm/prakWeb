@@ -1,26 +1,23 @@
 <?php
-if (isset($_FILES['files'])) {
+if (isset($_FILES['file'])) {
     $errors = array();
     $targetDirectory = "documents/";
-    $allowedExtentions = array("png", "jpg", "jpeg", "gif");
-    $maxFileSize = 2097152;
+    $allowedExtentions = array("pdf", "doc", "docx", "txt");
+    $maxFileSize = 2 * 1024 * 1024;
 
     if (!file_exists($targetDirectory)) {
         mkdir($targetDirectory, 0777, true);
-    }
-    
-    $totalFiles = count($_FILES['files']['name']);
+    }    
 
-    for ($i = 0; $i < $totalFiles; $i++) { 
-    $file_name = $_FILES['files']['name'][$i];
-    $file_Size = $_FILES['files']['size'][$i];
-    $file_Tmp = $_FILES['files']['tmp_name'][$i];
-    $file_Type = $_FILES['files']['type'][$i];
+    $file_name = $_FILES['file']['name'];
+    $file_Size = $_FILES['file']['size'];
+    $file_Tmp = $_FILES['file']['tmp_name'];
     $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+
     $targetFile = $targetDirectory . basename($file_name);
     
     if (!in_array($file_ext, $allowedExtentions)) {
-        $errors[] = "Ekstensi file yang diizinkan adalah jpg, jpeg, png, atau gif untuk file $file_name";
+        $errors[] = "Ekstensi file yang diizinkan adalah pdf, doc, docx, txt untuk file $file_name";
     }
     if ($file_Size > $maxFileSize) {
         $errors[] = 'Ukuran file tidak boleh lebih dari 2MB';
@@ -34,7 +31,6 @@ if (isset($_FILES['files'])) {
     }else{
         echo implode(" ", $errors);
     }
-}
 }else{
     echo "Tidak ada file yang diunggah";
 }
