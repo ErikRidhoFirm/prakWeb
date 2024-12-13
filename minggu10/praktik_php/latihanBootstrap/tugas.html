@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pengenalan Bootstrap</title>
+    <!-- Menyisipkan Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Menyisipkan Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Welcome!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+          <!--Dropdown-->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Genre
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Comedy</a>
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Horror</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--jumbotron-->
+      <div class="jumbotron text-center">
+        <h1>Hi! welcome to E-Movies</h1>
+        <h6>I'am Student From State Polytechnic Of Malang. Create this website to movie lovers want to watch any movies and anime</h6>
+        <h6>don't worry this website it's safety and definitely <b>legal</b>  and <b>free</b></h6>
+        <h6>So, enjoy the movie:)</h6>
+      </div>
+    </div>
+    <div class="text-center">
+        <h1>Recommended movie you should watch!</h1>
+    </div>
+    <!--gambar-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../latihanBootstrap/img/Sen to Chihiro no Kamikakushi.jpeg" alt="anime1" class="card-img-top" style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Spirited Away</h5>
+                        <p class="card-text">
+                            Seorang gadis kecil yang tersesat di dunia roh bersama orang tuanya yang berubah menjadi babi. 
+                            Untuk menyelamatkan mereka dan kembali ke dunia manusia, Chihiro harus bekerja di pemandian roh milik penyihir Yubaba. 
+                            Dalam perjalanannya, ia belajar tentang keberanian, persahabatan, dan ketekunan.
+                        </p>
+                        <button class="btn btn-dark">More Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../latihanBootstrap/img/Your name.jpeg" alt="anime2" class="card-img-top" style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Your Name</h5>
+                        <p class="card-text">
+                            Bercerita tentang Mitsuha, seorang gadis desa, dan Taki, seorang pemuda kota, yang secara ajaib saling bertukar tubuh. 
+                            Ketika mereka mulai memahami kehidupan satu sama lain, mereka membentuk ikatan unik. 
+                            Namun, saat fenomena itu berhenti, Taki menyadari sebuah tragedi besar yang menghubungkan mereka. 
+                        </p>
+                        <button class="btn btn-dark">More Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../latihanBootstrap/img/Howls Moving Castle.jpeg" alt="anime3" class="card-img-top" style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Howl's Moving Castle</h5>
+                        <p class="card-text">
+                            Sophie, seorang gadis muda yang bekerja di toko topi, dikutuk oleh Penyihir dari Waste menjadi wanita tua. 
+                            Dalam upaya mematahkan kutukan, ia bertemu dengan Howl, seorang penyihir tampan yang tinggal di kastel berjalan ajaib. 
+                            Sophie bergabung dengan Howl, Calcifer (iblis api yang menggerakkan kastel) 
+                        </p>
+                        <button class="btn btn-dark">More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+<p>&copy; 2024 Erik Ridho Firmansyah. All Rights Reserved.</p>
+</footer>
+<!-- Bootstrap JS -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
