@@ -38,6 +38,12 @@
      ?> 
 </div>
 <script>
+    function konfirmasiHapus(id, nama) {
+        var konfirmasi = confirm("apakah anda yakin ingin menghapus data dengan nama " + nama + "?");
+        if (konfirmasi) {
+            window.location.href = "proses.php?aksi=hapus&id=" + id;
+        }
+    }
 </script>
 </body>
 </html> 
